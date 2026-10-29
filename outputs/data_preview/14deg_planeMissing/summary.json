@@ -1,0 +1,40 @@
+{
+  "dataset": "14deg_planeMissing",
+  "frames": 825,
+  "image_shape": [
+    512,
+    96
+  ],
+  "sonar": {
+    "RangeBins": 512,
+    "AzimuthBins": 96,
+    "RangeMin": 0,
+    "RangeMax": 8,
+    "InitOctreeRange": 50,
+    "Elevation": 14,
+    "Azimuth": 28.8,
+    "AzimuthStreaks": -1,
+    "ScaleNoise": true,
+    "AddSigma": 0.15,
+    "MultSigma": 0.2,
+    "RangeSigma": 0.0,
+    "MultiPath": true,
+    "ViewOctree": -1
+  },
+  "sampled_files": [
+    "51.pkl",
+    "325.pkl",
+    "99146.pkl",
+    "99421.pkl"
+  ],
+  "position_min": [
+    3.56358003616333,
+    -7.113866329193115,
+    -18.589122772216797
+  ],
+  "position_max": [
+    17.17500114440918,
+    12.349188804626465,
+    -11.836957931518555
+  ]
+}

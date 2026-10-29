@@ -1,0 +1,40 @@
+{
+  "dataset": "28deg_planeFull",
+  "frames": 988,
+  "image_shape": [
+    512,
+    96
+  ],
+  "sonar": {
+    "RangeBins": 512,
+    "AzimuthBins": 96,
+    "RangeMin": 0,
+    "RangeMax": 8,
+    "InitOctreeRange": 50,
+    "Elevation": 28,
+    "Azimuth": 28.8,
+    "AzimuthStreaks": -1,
+    "ScaleNoise": true,
+    "AddSigma": 0.15,
+    "MultSigma": 0.2,
+    "RangeSigma": 0.0,
+    "MultiPath": true,
+    "ViewOctree": -1
+  },
+  "sampled_files": [
+    "0.pkl",
+    "329.pkl",
+    "99206.pkl",
+    "99535.pkl"
+  ],
+  "position_min": [
+    -25.26907730102539,
+    -18.674253463745117,
+    -19.39892578125
+  ],
+  "position_max": [
+    -6.899912357330322,
+    5.127321720123291,
+    -12.038979530334473
+  ]
+}
