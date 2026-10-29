@@ -6,7 +6,8 @@ import math
 from scipy.io import savemat
 
 def load_data(target):
-    dirpath = "./data/{}".format(target)
+    # dirpath = "./data/{}".format(target)
+    dirpath = "/data/jl/data/neusis/{}".format(target) # my local path
     pickle_loc = "{}/Data".format(dirpath)
     output_loc = "{}/UnzipData".format(dirpath)
     cfg_path = "{}/Config.json".format(dirpath)

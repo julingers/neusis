@@ -1,0 +1,45 @@
+# Datasets (keep the directory placeholder)
+/data/*
+!/data/.keepme.txt
+
+# Training runs and generated visualizations
+/experiments/
+/outputs/
+/logs/
+/runs/
+
+# Model checkpoints and large data artifacts
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.safetensors
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.mat
+*.h5
+*.hdf5
+*.ply
+*.stl
+
+# Dataset archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Runtime logs
+*.log
+nohup.out
