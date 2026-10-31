@@ -20,3 +20,18 @@ python scripts/visualize_data.py --data-root ./data --samples 6 --output-dir ./o
 - `summary.json`：帧数、图像尺寸、声呐参数、抽样文件名及位置范围。
 
 脚本逐帧读取，仅保留抽样图像和位置，不修改原始数据，也不调用训练数据加载器。原始格式为 pickle，只应读取可信数据。可以直接在 VS Code 中打开生成的 PNG。
+
+## 极坐标扇形显示
+
+```bash
+python scripts/visualize_polar.py --dataset 14deg_submarine
+python scripts/visualize_polar.py --dataset 14deg_planeFull --frame 100.pkl
+python scripts/visualize_polar.py --dataset all --samples 4
+```
+
+默认输出到 `outputs/polar_preview/<dataset>/polar_samples.png`，指定单帧时为 `polar_<文件名>.png`。
+每行对应一帧，三列依次是原始 r-theta 矩形图、原始扇形图、训练预处理后的扇形图，共用强度色标。
+默认按文件名自然排序等间隔选择 4 帧（不是随机抽样），也支持 `--data-root` 和 `--output-dir`。
+
+扇形采用配置中的水平方位角和距离范围，以 `x=r*sin(theta), y=r*cos(theta)` 绘制每个像素单元，保持米制等比例，不对强度插值。青色三角标记声呐位置，灰色线为距离圆弧和方位参考线。14°/28° 是垂直视场角，不是扇形的水平张角。
+该图以零俯仰角展示距离和方位，未应用 PoseSensor，不能当作真实世界水平截面或三维点云。
